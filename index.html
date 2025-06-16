@@ -18,10 +18,21 @@
     <link href="css/small-business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 
+    <style>
+      .site-heading h1 {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 600;
+        text-transform: none;
+      }
+
+      .site-heading {
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+      }
+    </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">ForBetterWeb</a>
+                <a class="navbar-brand" href="index.html">Magpie R&D</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,9 +69,6 @@
                     </li>
                     <li>
                         <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="page.html">Sample Page</a>
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
@@ -79,7 +87,23 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>Magpie Research & Development</h1>
+                        <!--<h1>Magpie Research & Development</h1>-->
+                        <h1 class="animated-header">
+  <div class="line-1">Magpie</div>
+  <div class="line-2">
+    Research & <span class="roll-prefix">De</span><span class="typewriter-text"></span>
+  </div>
+</h1>
+
+
+
+                       
+
+
+
+
+
+                        
                         <hr class="small">
                         <span class="subheading">Curious by Nature. Engineered by Design.
                             <br>turning ideas into functional, testable prototypes.</span>
@@ -257,6 +281,39 @@ Change UA-XXXXXXX-X to be your site's ID
     ga('create', 'UA-1057679-2', 'auto');
     ga('send', 'pageview');
 </script>
+
+<script>
+  const words = ["velopment", "sign", "ploy"];
+  const el = document.querySelector('.typewriter-text');
+  let wordIndex = 0;
+  let charIndex = 0;
+  let typing = true;
+
+  function typeLoop() {
+    const currentWord = words[wordIndex];
+    
+    if (typing) {
+      el.textContent = currentWord.slice(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === currentWord.length) {
+        typing = false;
+        setTimeout(typeLoop, 3000); // pause before backspacing
+        return;
+      }
+    } else {
+      el.textContent = currentWord.slice(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        typing = true;
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+    }
+    setTimeout(typeLoop, typing ? 100 : 50); // typing is slower than deleting
+  }
+
+  typeLoop();
+</script>
+
 
 </body>
 
