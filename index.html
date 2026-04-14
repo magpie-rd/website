@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,19 +18,70 @@
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 
-    <style>
-      .site-heading h1 {
-        font-family: 'Titillium Web', sans-serif;
-        font-weight: 600;
-        text-transform: none;
-      }
+   <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Titillium Web', sans-serif;
+      color: #2B2B2B;
+      background-color: #F8F9FA;
+      font-size: 16px;
+      line-height: 1.6;
+    }
 
-      .site-heading {
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-      }
+
+  .intro-header {
+      background-size: cover;
+      background-position: center;
+      padding: 150px 0 100px;
+      color: white;
+      text-align: center;
+      position: relative;
+      aspect-ratio: 16/9;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 50px;
+    }
+
+    .site-heading h1 {
+      font-weight: 600;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .site-heading .subheading {
+      font-size: 20px;
+      color: #eaeaea;
+    }
+
+    .post-title {
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .post-subtitle {
+      font-size: 14px;
+      color: #7D8896;
+    }
+
+    .footer {
+      background-color: #3E5C76;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer a {
+      color: #6DA8A8;
+    }
+
+    .typewriter-text {
+      font-weight: 400;
+    }
+    
     </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,75 +93,50 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Magpie R&D</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About Us</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+  <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Magpie R&D</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/caralog10.jpg')">
-        <div class="container overlay">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <!--<h1>Magpie Research & Development</h1>-->
-                        <h1 class="animated-header">
-  <div class="line-1">Magpie</div>
-  <div class="line-2">
-    Research & <span class="roll-prefix">De</span><span class="typewriter-text"></span>
-  </div>
-</h1>
-
-
-
-                       
-
-
-
-
-
-                        
-                        <hr class="small">
-                        <span class="subheading">Curious by Nature. Engineered by Design.
-                            <br>turning ideas into functional, testable prototypes.</span>
-                    </div>
-                </div>
-            </div>
+  <header class="intro-header" style="background-image: url('img/caralog10.jpg')">
+    <div class="container overlay">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="site-heading">
+            <h1 class="animated-header">
+              <div class="line-1">Magpie</div>
+              <div class="line-2">
+                Research & </div>
+                <div class="line-3"><span class="roll-prefix">De</span><span class="typewriter-text"></span>
+              </div>
+            </h1>
+            <hr class="small">
+            <span class="subheading">Curious by Nature. Engineered by Design.<br>Turning ideas into functional, testable prototypes.</span>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
     <!-- Main Content -->
 
@@ -272,46 +297,37 @@ Google Analitics
 Demo Purpose Only
 Change UA-XXXXXXX-X to be your site's ID
  -->
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ <!-- Scripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    const words = ["velopment", "sign", "ploy"];
+    const el = document.querySelector('.typewriter-text');
+    let wordIndex = 0;
+    let charIndex = 0;
+    let typing = true;
 
-    ga('create', 'UA-1057679-2', 'auto');
-    ga('send', 'pageview');
-</script>
-
-<script>
-  const words = ["velopment", "sign", "ploy"];
-  const el = document.querySelector('.typewriter-text');
-  let wordIndex = 0;
-  let charIndex = 0;
-  let typing = true;
-
-  function typeLoop() {
-    const currentWord = words[wordIndex];
-    
-    if (typing) {
-      el.textContent = currentWord.slice(0, charIndex + 1);
-      charIndex++;
-      if (charIndex === currentWord.length) {
-        typing = false;
-        setTimeout(typeLoop, 3000); // pause before backspacing
-        return;
+    function typeLoop() {
+      const currentWord = words[wordIndex];
+      if (typing) {
+        el.textContent = currentWord.slice(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === currentWord.length) {
+          typing = false;
+          setTimeout(typeLoop, 3000);
+          return;
+        }
+      } else {
+        el.textContent = currentWord.slice(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) {
+          typing = true;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
       }
-    } else {
-      el.textContent = currentWord.slice(0, charIndex - 1);
-      charIndex--;
-      if (charIndex === 0) {
-        typing = true;
-        wordIndex = (wordIndex + 1) % words.length;
-      }
+      setTimeout(typeLoop, typing ? 100 : 50);
     }
-    setTimeout(typeLoop, typing ? 100 : 50); // typing is slower than deleting
-  }
-
-  typeLoop();
+    typeLoop();
 </script>
 
 
